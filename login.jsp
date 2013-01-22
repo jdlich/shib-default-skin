@@ -9,11 +9,9 @@
   </head>
 
   <body>
-    <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
-    
     <div class="container">
       <header>
-      
+        <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
       </header>
     
       <div class="content">
