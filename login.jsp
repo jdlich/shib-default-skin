@@ -17,8 +17,6 @@
       </header>
       
       <div class="content">
-        
-      </div>
         <div class="column">
           <% if(request.getAttribute("actionUrl") != null){ %>
             <form id="login" action="<%=request.getAttribute("actionUrl")%>" method="post">
@@ -69,7 +67,7 @@
           <a href="#">Documentation</a>
         </nav>
       </footer>
-    </div>
+     </div>
 
      <!-- pick the logo. If its between 64 & max width/height display it
           If its too high but OK wide clip by height
@@ -113,7 +111,7 @@
          });
 
          inputFields.first().focus();
-       });
-     </script>
+      });
+    </script>
   </body>
 </html>
