@@ -26,13 +26,34 @@ a:visited {
   background: #ffffff;
 }
 
+header {
+  padding: 40px 0;
+}
+
+.content {
+  padding-bottom: 80px;
+}
+
 form label { /* labels are hidden */
   position: absolute;
   left: -999em;
   width: 1em;
   overflow: hidden;
 }
+form legend {
+  margin-bottom: 12px;
+}
+form section {
+  margin-bottom: 12px;
+}
 
+.list-help {
+  margin-top: -6px; /* offset padding on first anchor */
+}
+.list-help-item a {
+  display: block;
+  padding: 6px 0;
+}
 .item-marker {
   color: #be0000;
 }
