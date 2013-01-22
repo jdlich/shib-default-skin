@@ -14,11 +14,16 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
   color: #717171;
+  background: #717171;
 }
 a:link,
 a:visited {
   text-decoration: none;
   color: #717171;
+}
+
+.wrapper {
+  background: #ffffff;
 }
 
 form label { /* labels are hidden */

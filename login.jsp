@@ -9,62 +9,64 @@
   </head>
 
   <body>
-    <div class="container">
-      <header>
-        <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
-      </header>
+    <div class="wrapper">
+      <div class="container">
+        <header>
+          <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
+        </header>
     
-      <div class="content">
-        <div class="column">
-          <% if(request.getAttribute("actionUrl") != null){ %>
-            <form id="login" action="<%=request.getAttribute("actionUrl")%>" method="post">
-          <% }else{ %>
-            <form id="login" action="j_security_check" method="post">
-          <% } %>
-
-            <legend>
-              <idpui:serviceDescription>Log in to <idpui:serviceName/></idpui:serviceDescription>
-            </legend>
-
-            <section>
-              <label for="username">Username</label>
-              <input class="form-element form-field" name="j_username" type="text" value="username" />
-            </section>
-
-            <section>
-              <label for="password">Password</label>
-              <input class="form-element form-field" name="j_password" type="password" value="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;">
-            </section>
-
-            <section>
-              <button class="form-element form-button" type="submit">Log In</button>
-            </section>
-
-            <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
-              <section>
-                <span class="form-element form-error"><img src="images/error.png" /></span>
-              </section>
+        <div class="content">
+          <div class="column">
+            <% if(request.getAttribute("actionUrl") != null){ %>
+              <form id="login" action="<%=request.getAttribute("actionUrl")%>" method="post">
+            <% }else{ %>
+              <form id="login" action="j_security_check" method="post">
             <% } %>
-          </form>
+
+              <legend>
+                <idpui:serviceDescription>Log in to <idpui:serviceName/></idpui:serviceDescription>
+              </legend>
+
+              <section>
+                <label for="username">Username</label>
+                <input class="form-element form-field" name="j_username" type="text" value="username" />
+              </section>
+
+              <section>
+                <label for="password">Password</label>
+                <input class="form-element form-field" name="j_password" type="password" value="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;">
+              </section>
+
+              <section>
+                <button class="form-element form-button" type="submit">Log In</button>
+              </section>
+
+              <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
+                <section>
+                  <span class="form-element form-error"><img src="images/error.png" /></span>
+                </section>
+              <% } %>
+            </form>
+          </div>
+          <div class="column">
+            <ul class="list list-help">
+              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
+              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
+              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
+              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
+              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="column">
-          <ul class="list list-help">
-            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
-            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
-            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
-            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
-            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
-          </ul>
-        </div>
-      </div>
     
-      <footer>
-        <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
-        <nav class="footer-links">
-          <a href="#">About Shibboleth</a>
-          <a href="#">Documentation</a>
-        </nav>
-      </footer>
+        <footer>
+          <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
+          <nav class="footer-links">
+            <a href="#">About Shibboleth</a>
+            <a href="#">Documentation</a>
+          </nav>
+        </footer>
+      </div>
     </div>
 
     <!-- pick the logo. If its between 64 & max width/height display it
