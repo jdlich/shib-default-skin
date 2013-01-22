@@ -49,11 +49,11 @@
         </div>
         <div class="column">
           <ul class="list list-help">
-            <li class="help-list-item"><a href="#"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
-            <li class="help-list-item"><a href="#"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
-            <li class="help-list-item"><a href="#"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
-            <li class="help-list-item"><a href="#"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
-            <li class="help-list-item"><a href="#"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
+            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
+            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
+            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
+            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
+            <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
           </ul>
         </div>
       </div>
