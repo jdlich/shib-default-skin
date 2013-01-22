@@ -57,3 +57,25 @@ form section {
 .item-marker {
   color: #be0000;
 }
+
+footer {
+  color: #ffffff;
+  font-size: 11px;
+  position: relative;
+  bottom: -58px;
+}
+footer p {
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+  font-weight: bold;
+}
+footer a:after {
+  content: "\00a0\00a0\00a0|\00a0\00a0";
+}
+footer a.last:after {
+  content: "";
+}

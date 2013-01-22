@@ -111,6 +111,9 @@
         });
 
         inputFields.first().focus();
+        
+        // Add last class to footer nav
+        $("footer nav a:last-child").addClass("last");
       });
     </script>
   </body>
