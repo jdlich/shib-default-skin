@@ -10,12 +10,12 @@
 
   <body>
     <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
-
+    
     <div class="container">
       <header>
-        
-      </header>
       
+      </header>
+    
       <div class="content">
         <div class="column">
           <% if(request.getAttribute("actionUrl") != null){ %>
@@ -59,7 +59,7 @@
           </ul>
         </div>
       </div>
-      
+    
       <footer>
         <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
         <nav class="footer-links">
@@ -67,50 +67,50 @@
           <a href="#">Documentation</a>
         </nav>
       </footer>
-     </div>
+    </div>
 
-     <!-- pick the logo. If its between 64 & max width/height display it
-          If its too high but OK wide clip by height
-          If its too wide clip by width.
-          We should not clip by height and width since that skews the image.  Too high an image will just show the top.
+    <!-- pick the logo. If its between 64 & max width/height display it
+         If its too high but OK wide clip by height
+         If its too wide clip by width.
+         We should not clip by height and width since that skews the image.  Too high an image will just show the top.
   
-     <idpui:serviceLogo minWidth="64" minHeight="64" maxWidth="350" maxHeight="147" cssId="splogo">
-        <idpui:serviceLogo  minWidth="64" minHeight="64" maxWidth="350" cssId="clippedsplogoY">
-            <idpui:serviceLogo  minWidth="64" minHeight="64" cssId="clippedsplogoX"/>
-        </idpui:serviceLogo>
-     </idpui:serviceLogo> -->
+    <idpui:serviceLogo minWidth="64" minHeight="64" maxWidth="350" maxHeight="147" cssId="splogo">
+      <idpui:serviceLogo  minWidth="64" minHeight="64" maxWidth="350" cssId="clippedsplogoY">
+        <idpui:serviceLogo  minWidth="64" minHeight="64" cssId="clippedsplogoX"/>
+    </idpui:serviceLogo>
+    </idpui:serviceLogo> -->
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
-     <script>
-       $(document).ready(function () {
-         inputFields = $("#login input");
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        inputFields = $("#login input");
 
-         inputFields.each(function () {
-           var inputField   = $(this),
-               defaultValue = inputField.val(),
-               defaultColor = inputField.css("color");
+        inputFields.each(function () {
+          var inputField   = $(this),
+              defaultValue = inputField.val(),
+              defaultColor = inputField.css("color");
 
-           inputField.focus(function () {
-             var inputField = $(this);
+          inputField.focus(function () {
+            var inputField = $(this);
 
-             if ( inputField.val() == defaultValue ) {
-               inputField.val('');
-               inputField.css("color", "#333333");
-             }
-           });
+            if ( inputField.val() == defaultValue ) {
+              inputField.val('');
+              inputField.css("color", "#333333");
+            }
+          });
 
-           inputField.blur(function () {
-             var inputField = $(this);
+          inputField.blur(function () {
+            var inputField = $(this);
 
-             if ( !inputField.val() ) {
-               inputField.attr("value", defaultValue);
-               inputField.css("color", defaultColor);
-             }
-           });          
-         });
+            if ( !inputField.val() ) {
+              inputField.attr("value", defaultValue);
+              inputField.css("color", defaultColor);
+            }
+          });          
+        });
 
-         inputFields.first().focus();
+        inputFields.first().focus();
       });
     </script>
   </body>
