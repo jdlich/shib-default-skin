@@ -1,63 +1,34 @@
-div.loginbox {
-    background-color: #FFFFFF;
-    position: relative;
-    width: 840px;
-    height: 300px;
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+header, footer, section, nav {
+  display: block;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #717171;
+  line-height: 2;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #717171;
 }
 
-div.loginbox div.leftpane {
-    border: 2px #A40000 solid;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    width: 47%;
-    height: 90%;
+form label { /* labels are hidden */
+  position: absolute;
+  left: -999em;
+  width: 1em;
+  overflow: hidden;
 }
 
-div.loginbox div.rightpane {
-	border: 2px #A40000 solid;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 47%;
-    height: 90%;
-    overflow: hidden;
-    text-align: center;
+.item-marker {
+  color: #be0000;
 }
-
-div.loginbox div.content{
-    padding-top: 5px;
-    padding-left: 7px;
-    padding-right: 7px;
-    margin:auto;
-}
-
-div.loginbox #splogo{
-}
-
-
-div.loginbox #clippedsplogoX {
-    width: 350px;
-}
-
-div.loginbox #clippedsplogoY {
-    height: 147px;
-}
-
-div.loginbox #spName{
-    padding-top:5px;
-    padding-bottom:5px;
-    font-size:1.2em;
-}
-
-div.loginbox #spDescription{
-    padding-top:15px;
-    text-align:left;
-}
-
-/*
-div.loginbox button, div {
-	height: 46px;
-	width: 80%;
-}
-*/
