@@ -52,7 +52,7 @@
             <ul class="list list-help">
               <li class="list-help-item"><a href="http://shibboleth.net/about"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
               <li class="list-help-item"><a href="https://wiki.shibboleth.net"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
-              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
+              <li class="list-help-item"><a href="https://wiki.shibboleth.net/confluence/display/SHIB2/IdPAuthUserPassLoginPage"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
               <li class="list-help-item"><a href="http://shibboleth.net/community/lists.html"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
               <li class="list-help-item"><a href="https://issues.shibboleth.net"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
             </ul>
