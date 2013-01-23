@@ -84,6 +84,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
     <script>
       $(document).ready(function () {
+
+        // Inside input field labels
         inputFields = $("#login input");
 
         inputFields.each(function () {
@@ -109,11 +111,12 @@
             }
           });          
         });
-
+        
+        // Autofocus username field
         inputFields.first().focus();
         
-        // Add last class to footer nav
-        $("footer nav a:last-child").addClass("last");
+        // Add "last" class to footer nav
+        $(".footer-links a:last-child").addClass("last");
       });
     </script>
   </body>
