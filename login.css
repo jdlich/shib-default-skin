@@ -86,18 +86,18 @@ footer {
   position: relative;
   bottom: -58px;
 }
-footer p {
+.footer-text {
   line-height: 1.5;
   margin-bottom: 12px;
 }
-footer a:link,
-footer a:visited {
+.footer-links a:link,
+.footer-links a:visited {
   color: #ffffff;
   font-weight: bold;
 }
-footer a:after {
+.footer-links a:after {
   content: "\00a0\00a0\00a0|\00a0\00a0";
 }
-footer a.last:after {
+.footer-links a.last:after {
   content: "";
 }
