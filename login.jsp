@@ -60,12 +60,14 @@
         </div>
       </div>
 
-      <footer class="container container-footer">
-        <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
-        <nav class="footer-links">
-          <a href="#">About Shibboleth</a>
-          <a href="#">Documentation</a>
-        </nav>
+      <footer>
+        <div class="container container-footer">
+          <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
+          <nav class="footer-links">
+            <a href="#">About Shibboleth</a>
+            <a href="#">Documentation</a>
+          </nav>
+        </div>
       </footer>
     </div>
 
