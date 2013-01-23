@@ -54,6 +54,7 @@ header {
 }
 
 form {
+  width: 240px;
   padding-bottom: 40px;
 }
 form label { /* labels are hidden */
@@ -69,7 +70,7 @@ form section {
   margin-bottom: 12px;
 }
 .form-element {
-  width: 240px;
+  width: 100%;
   border: none;
   padding: 13px 12px;
   border-radius: 5px;
