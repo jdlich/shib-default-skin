@@ -12,7 +12,7 @@
     <div class="wrapper">
       <div class="container">
         <header>
-          <img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/>
+          <a class="logo" href="http://shibboleth.net/"><img src="<%= request.getContextPath()%>/images/logo.jpg" alt="Shibboleth Logo"/></a>
         </header>
     
         <div class="content">

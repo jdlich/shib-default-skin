@@ -40,6 +40,11 @@ header {
   padding: 40px 0;
 }
 
+.logo img {
+  display: block;
+  border: none;
+}
+
 .content {
   padding-bottom: 80px;
   overflow: hidden;
