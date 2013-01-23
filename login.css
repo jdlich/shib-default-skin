@@ -36,14 +36,37 @@ a:visited {
 .container-footer {
   padding-top: 12px;
 }
+@media only screen and (max-width: 1020px) {
+  .container {
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    position: static;
+    margin: 0 auto;
+    width: 280px;
+  }
+}
 
 header {
   padding: 40px 0;
 }
 
 .logo img {
-  display: block;
   border: none;
+}
+@media only screen and (max-width: 650px) {
+  .logo img {
+    display: none;
+  }
+  .logo {
+    background: url(images/logo-mobile.png) no-repeat top center;
+    display: block;
+    height: 122px;
+    width: 96px;
+    margin: 0 auto;
+  }
 }
 
 .content {
