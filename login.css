@@ -13,6 +13,7 @@ html, body {
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  line-height: 1.5;
   color: #717171;
   background: #717171;
 }
@@ -112,7 +113,6 @@ footer {
   background: #717171;
 }
 .footer-text {
-  line-height: 1.5;
   margin-bottom: 12px;
 }
 .footer-links a:link,
