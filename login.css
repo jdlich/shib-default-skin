@@ -34,6 +34,9 @@ header {
   padding-bottom: 80px;
 }
 
+form {
+  padding-bottom: 40px;
+}
 form label { /* labels are hidden */
   position: absolute;
   left: -999em;
@@ -45,6 +48,24 @@ form legend {
 }
 form section {
   margin-bottom: 12px;
+}
+.form-element {
+  width: 240px;
+  border: none;
+  padding: 13px 12px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  font-size: 14px;
+}
+.form-field {
+  background: #E3E3E3;
+  color: #B7B7B7;
+}
+.form-button {
+  background: #B61601;
+  box-sizing: content-box;
+  color: #ffffff;
 }
 
 .list-help {
