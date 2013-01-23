@@ -58,15 +58,15 @@
             </ul>
           </div>
         </div>
-    
-        <footer>
-          <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
-          <nav class="footer-links">
-            <a href="#">About Shibboleth</a>
-            <a href="#">Documentation</a>
-          </nav>
-        </footer>
       </div>
+
+      <footer class="container container-footer">
+        <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
+        <nav class="footer-links">
+          <a href="#">About Shibboleth</a>
+          <a href="#">Documentation</a>
+        </nav>
+      </footer>
     </div>
 
     <!-- pick the logo. If its between 64 & max width/height display it

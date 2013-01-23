@@ -26,6 +26,13 @@ a:visited {
   background: #ffffff;
 }
 
+.container {
+  padding: 0 20px;
+}
+.container-footer {
+  padding-top: 12px;
+}
+
 header {
   padding: 40px 0;
 }
@@ -83,8 +90,7 @@ form section {
 footer {
   color: #ffffff;
   font-size: 11px;
-  position: relative;
-  bottom: -58px;
+  background: #717171;
 }
 .footer-text {
   line-height: 1.5;
