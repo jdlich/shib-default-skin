@@ -50,11 +50,11 @@
           </div>
           <div class="column two">
             <ul class="list list-help">
-              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
-              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
+              <li class="list-help-item"><a href="http://shibboleth.net/about"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
+              <li class="list-help-item"><a href="https://wiki.shibboleth.net"><span class="item-marker">&rsaquo;</span> Documentation</a></li>
               <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> How to Customize this Skin</a></li>
-              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
-              <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
+              <li class="list-help-item"><a href="http://shibboleth.net/community/lists.html"><span class="item-marker">&rsaquo;</span> View the Mailing Lists</a></li>
+              <li class="list-help-item"><a href="https://issues.shibboleth.net"><span class="item-marker">&rsaquo;</span> Report a Bug</a></li>
             </ul>
           </div>
         </div>
@@ -64,8 +64,8 @@
         <div class="container container-footer">
           <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
           <nav class="footer-links">
-            <a href="#">About Shibboleth</a>
-            <a href="#">Documentation</a>
+            <a href="http://shibboleth.net/about">About Shibboleth</a>
+            <a href="https://wiki.shibboleth.net">Documentation</a>
           </nav>
         </div>
       </footer>
