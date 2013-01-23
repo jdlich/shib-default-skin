@@ -16,7 +16,7 @@
         </header>
     
         <div class="content">
-          <div class="column">
+          <div class="column one">
             <% if(request.getAttribute("actionUrl") != null){ %>
               <form id="login" action="<%=request.getAttribute("actionUrl")%>" method="post">
             <% }else{ %>
@@ -48,7 +48,7 @@
               <% } %>
             </form>
           </div>
-          <div class="column">
+          <div class="column two">
             <ul class="list list-help">
               <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> About Shibboleth</a></li>
               <li class="list-help-item"><a href="#"><span class="item-marker">&rsaquo;</span> Documentation</a></li>

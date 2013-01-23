@@ -27,7 +27,10 @@ a:visited {
 }
 
 .container {
-  padding: 0 20px;
+  position: relative;
+  left: 34%;
+  width: 540px;
+  margin-left: -270px;
 }
 .container-footer {
   padding-top: 12px;
@@ -39,6 +42,15 @@ header {
 
 .content {
   padding-bottom: 80px;
+  overflow: hidden;
+}
+
+.column {
+  float: left;
+}
+.column.one {
+  width: 50%;
+  margin-right: 48px;
 }
 
 form {
