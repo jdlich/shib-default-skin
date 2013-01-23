@@ -70,6 +70,7 @@ form section {
 
 .list-help {
   margin-top: -6px; /* offset padding on first anchor */
+  list-style: none;
 }
 .list-help-item a {
   display: block;
