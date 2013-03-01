@@ -22,6 +22,9 @@ a:visited {
   text-decoration: none;
   color: #717171;
 }
+img {
+  max-width: 100%;
+}
 
 .wrapper {
   background: #ffffff;
@@ -84,7 +87,7 @@ header {
 
 form {
   width: 240px;
-  padding-bottom: 40px;
+  padding-bottom: 21px;
 }
 form label { /* labels are hidden */
   position: absolute;

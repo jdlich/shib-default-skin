@@ -47,6 +47,21 @@
                 </section>
               <% } %>
             </form>
+            
+            <%
+              //
+              //    SP Description & Logo (optional)
+              //
+              //    Documentation: 
+              //      https://wiki.shibboleth.net/confluence/display/SHIB2/IdPAuthUserPassLoginPage
+              //
+              //    Example:
+              //      <p>
+              //        <idpui:serviceLogo>default</idpui:serviceLogo>
+              //        <idpui:serviceDescription>SP description</idpui:serviceDescription>
+              //      </p>
+              //
+            %>
           </div>
           <div class="column two">
             <ul class="list list-help">
@@ -70,17 +85,6 @@
         </div>
       </footer>
     </div>
-
-    <!-- pick the logo. If its between 64 & max width/height display it
-         If its too high but OK wide clip by height
-         If its too wide clip by width.
-         We should not clip by height and width since that skews the image.  Too high an image will just show the top.
-  
-    <idpui:serviceLogo minWidth="64" minHeight="64" maxWidth="350" maxHeight="147" cssId="splogo">
-      <idpui:serviceLogo  minWidth="64" minHeight="64" maxWidth="350" cssId="clippedsplogoY">
-        <idpui:serviceLogo  minWidth="64" minHeight="64" cssId="clippedsplogoX"/>
-    </idpui:serviceLogo>
-    </idpui:serviceLogo> -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
