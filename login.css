@@ -124,6 +124,10 @@ form section {
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   color: #ffffff;
+  cursor: pointer;
+}
+.form-button:hover {
+  background: #FF6400;
 }
 
 .list-help {
