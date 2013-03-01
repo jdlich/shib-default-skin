@@ -24,7 +24,7 @@
             <% } %>
 
               <legend>
-                <idpui:serviceDescription>Log in to <idpui:serviceName/></idpui:serviceDescription>
+                Log in to <idpui:serviceName/>
               </legend>
 
               <section>
