@@ -129,6 +129,10 @@ form section {
 .form-button:hover {
   background: #FF6400;
 }
+.form-error {
+  padding: 0;
+  color: #B61601;
+}
 
 .list-help {
   margin-top: -6px; /* offset padding on first anchor */

@@ -23,6 +23,12 @@
               <form id="login" action="j_security_check" method="post">
             <% } %>
 
+              <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
+                <section>
+                  <p class="form-element form-error">Login has failed. Double-check your username and password.</p>
+                </section>
+              <% } %>
+
               <legend>
                 Log in to <idpui:serviceName/>
               </legend>
@@ -40,12 +46,6 @@
               <section>
                 <button class="form-element form-button" type="submit">Log In</button>
               </section>
-
-              <% if ("true".equals(request.getAttribute("loginFailed"))) { %>
-                <section>
-                  <span class="form-element form-error"><img src="images/error.png" /></span>
-                </section>
-              <% } %>
             </form>
             
             <%
