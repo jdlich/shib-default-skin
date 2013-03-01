@@ -115,6 +115,9 @@ form section {
   background: #E3E3E3;
   color: #B7B7B7;
 }
+.form-field-focus {
+  color: #333333;
+}
 .form-button {
   background: #B61601;
   box-sizing: content-box;

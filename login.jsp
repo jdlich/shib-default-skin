@@ -91,31 +91,28 @@
     <script>
       $(document).ready(function () {
 
-        // Inside input field labels
+        // Placeholder script
         inputFields = $("#login input");
 
         inputFields.each(function () {
           var inputField   = $(this),
-              defaultValue = inputField.val(),
-              defaultColor = inputField.css("color");
+              defaultValue = inputField.val();
 
-          inputField.focus(function () {
-            var inputField = $(this);
+          inputField
+            .focus(function () {
+              var thisInput = $(this);
 
-            if ( inputField.val() == defaultValue ) {
-              inputField.val('');
-              inputField.css("color", "#333333");
-            }
-          });
+              if ( thisInput.val() == defaultValue ) {
+                thisInput.addClass('form-field-focus').val('');
+              }
+            })
+            .blur(function () {
+              var thisInput = $(this);
 
-          inputField.blur(function () {
-            var inputField = $(this);
-
-            if ( !inputField.val() ) {
-              inputField.attr("value", defaultValue);
-              inputField.css("color", defaultColor);
-            }
-          });          
+              if ( !thisInput.val() ) {
+                thisInput.removeClass('form-field-focus').attr('value', defaultValue);
+              }
+            });            
         });
         
         // Autofocus username field
