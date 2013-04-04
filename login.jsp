@@ -80,7 +80,7 @@
           <p class="footer-text">Shibboleth is a standards based, open source software package for WebSSO across or within organizational boundaries. Shibboleth&reg; is a registered trademark of Internet2&reg;.</p>
           <nav class="footer-links">
             <a href="http://shibboleth.net/about">About Shibboleth</a>
-            <a href="https://wiki.shibboleth.net">Documentation</a>
+            <a class="last" href="https://wiki.shibboleth.net">Documentation</a>
           </nav>
         </div>
       </footer>
@@ -117,9 +117,6 @@
         
         // Autofocus username field
         inputFields.first().focus();
-        
-        // Add "last" class to footer nav
-        $(".footer-links a:last-child").addClass("last");
       });
     </script>
   </body>
