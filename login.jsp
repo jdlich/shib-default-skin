@@ -35,12 +35,12 @@
 
               <section>
                 <label for="username">Username</label>
-                <input class="form-element form-field" name="j_username" type="text" value="username" />
+                <input id="username" class="form-element form-field" name="j_username" type="text" value="username" />
               </section>
 
               <section>
                 <label for="password">Password</label>
-                <input class="form-element form-field" name="j_password" type="password" value="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;">
+                <input id="password" class="form-element form-field" name="j_password" type="password" value="&#149;&#149;&#149;&#149;&#149;&#149;&#149;&#149;">
               </section>
 
               <section>
@@ -86,38 +86,32 @@
       </footer>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
     <script>
-      $(document).ready(function () {
-
-        // Placeholder script
-        inputFields = $("#login input");
-
-        inputFields.each(function () {
-          var inputField   = $(this),
-              defaultValue = inputField.val();
-
-          inputField
-            .focus(function () {
-              var thisInput = $(this);
-
-              if ( thisInput.val() == defaultValue ) {
-                thisInput.addClass('form-field-focus').val('');
-              }
-            })
-            .blur(function () {
-              var thisInput = $(this);
-
-              if ( !thisInput.val() ) {
-                thisInput.removeClass('form-field-focus').attr('value', defaultValue);
-              }
-            });            
-        });
-        
-        // Autofocus username field
-        inputFields.first().focus();
-      });
+      var username = document.getElementById("username"),
+          password = document.getElementById("password");
+			
+      username.focus();
+      placeholder(username);
+      placeholder(password);
+      
+      function placeholder(inputField) {
+				var defaultValue = inputField.getAttribute("value"),
+						defaultClass = inputField.className;
+						
+				inputField.onfocus = function() {
+					if ( this.value == defaultValue ) {
+						this.className = this.className + ' form-field-focus';
+						this.value = '';
+					}
+				}
+				
+				inputField.onblur = function() {
+					if ( !this.value ) {
+						this.className = defaultClass;
+						this.value = defaultValue;
+					}
+				}
+      }
     </script>
   </body>
 </html>
